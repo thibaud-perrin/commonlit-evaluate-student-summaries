@@ -1,0 +1,44 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "student_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt_question": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "prompt_text": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "content": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wording": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_content": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_wording": {
+      "dtype": "float64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

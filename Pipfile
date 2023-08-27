@@ -1,0 +1,35 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu117"
+verify_ssl = true
+name = "pytorch"
+
+[packages]
+torch = {version="==2.0.1+cu117", index="pytorch"}
+torchvision = {index="pytorch"}
+torchaudio = {index="pytorch"}
+numpy = "*"
+jupyterlab = "*"
+gradio = "*"
+transformers = "*"
+accelerate = "*"
+ipywidgets = "*"
+matplotlib = "*"
+seaborn = "*"
+safetensors = "*"
+scipy = "*"
+scikit-learn = "*"
+nlu = "*"
+pyspark = "*"
+sentence-transformers = "*"
+datasets = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.2"

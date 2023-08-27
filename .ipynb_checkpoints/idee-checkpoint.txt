@@ -1,0 +1,17 @@
+links: 
+1. https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/discussion/424353
+2. https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/discussion/424372
+3. https://readabilityformulas.com/articles/dale-chall-readability-word-list.php
+4. https://www.kaggle.com/competitions/asl-fingerspelling/discussion/434485
+
+Reflexion:
+1. Demander à un LLM de donner une note entre 0-7 concernant chaque sous paragraphe du lien 1.
+2. recupérer les embedding des questions et des reponses (SqueezeFormer ou landmark)
+3. faire un model qui prends tout ça et qui resort 2 chiffres entre -2 et 4
+
+test set explain:
+https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/discussion/427928
+
+Embedding:
+- https://blog.gopenai.com/bge-embeddings-langchain-and-chroma-for-retrieval-qa-9c684206d8f3 (original)
+- https://webcache.googleusercontent.com/search?q=cache:https://blog.gopenai.com/bge-embeddings-langchain-and-chroma-for-retrieval-qa-9c684206d8f3 (unpaywall)
