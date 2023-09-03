@@ -28,6 +28,8 @@ pyspark = "*"
 sentence-transformers = "*"
 datasets = "*"
 onnx = "*"
+py-readability-metrics = "*"
+nltk = "*"
 
 [dev-packages]
 

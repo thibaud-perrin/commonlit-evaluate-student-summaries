@@ -12,6 +12,7 @@ def remove_stop_words(text):
     return ' '.join(filtered_words)
 
 def count_syllables(word):
+    """Return the number of syllables in a word."""
     word = word.lower()
     count = 0
     vowels = "aeiouy"
@@ -22,20 +23,22 @@ def count_syllables(word):
             count += 1
     if word.endswith("e"):
         count -= 1
+    if word.endswith("le") and len(word) > 2 and word[-3] not in vowels:
+        count += 1
     if count == 0:
         count += 1
     return count
 
 def readability_scores(text):
-    text = remove_stop_words(text)  # Remove stop words from the text
-    
-    sentences = re.split(r'[.!?]', text)
-    sentences = [s for s in sentences if len(s) > 0]
-    
+    # text = remove_stop_words(text)  # Remove stop words from the text
+    """Compute the Flesch-Kincaid grade level of a text."""
+    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)
+    words = re.findall(r'\w+', text)
+
     total_sentences = len(sentences)
-    total_words = sum(len(s.split()) for s in sentences)
-    total_syllables = sum(count_syllables(word) for word in re.findall(r'\w+', text))
-    polysyllable_count = sum(1 for word in re.findall(r'\w+', text) if count_syllables(word) >= 3)
+    total_words = len(words)
+    total_syllables = sum(count_syllables(word) for word in words)
+    polysyllable_count = sum(1 for word in words if count_syllables(word) >= 3)
     
     # Flesch-Kincaid Grade Level
     FK_grade = 0.39 * (total_words/total_sentences) + 11.8 * (total_syllables/total_words) - 15.59
