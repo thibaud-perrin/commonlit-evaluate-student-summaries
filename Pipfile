@@ -27,6 +27,7 @@ nlu = "*"
 pyspark = "*"
 sentence-transformers = "*"
 datasets = "*"
+onnx = "*"
 
 [dev-packages]
 

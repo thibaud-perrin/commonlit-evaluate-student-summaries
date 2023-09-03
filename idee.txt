@@ -15,3 +15,60 @@ https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/discuss
 Embedding:
 - https://blog.gopenai.com/bge-embeddings-langchain-and-chroma-for-retrieval-qa-9c684206d8f3 (original)
 - https://webcache.googleusercontent.com/search?q=cache:https://blog.gopenai.com/bge-embeddings-langchain-and-chroma-for-retrieval-qa-9c684206d8f3 (unpaywall)
+
+
+-----
+
+1. Synonym Replacement:
+Identify and replace words in the 'question', 'question title', 'text', and 'answers' with their synonyms.
+
+2. Sentence Shuffling:
+For 'text' column which might have multiple sentences, you can shuffle the order of sentences. This doesn’t make much sense for 'question' and 'answer' columns as their order is crucial for understanding.
+
+3. (Random Deletion:)
+Randomly delete words from the 'text', ensuring that the resultant text still makes sense and is relevant to the question and answer.
+
+4. Question Paraphrasing:
+Use models or tools to paraphrase the 'question' to generate different ways of asking the same question.
+
+5. Expand Contractions:
+Convert contractions (e.g., "can't" to "cannot") and vice versa.
+
+✅ 6. Noise Injection:
+x Introduce typographical errors at a low frequency. This can help models become robust to misspellings.
+
+7. Masked Language Model Augmentation:
+Use models like BERT to predict and replace masked words, creating variations of sentences.
+
+8. Synonym Replacement:
+For "wording", replace simpler words with their more complex synonyms and vice versa. For example, replace "use" with "utilize". You'd then adjust the "wording" score based on these changes.
+
+9. Sentence Complexity Variation:
+For "wording", you can introduce or reduce compound or complex sentence structures. For example, change "I went to the store. I bought bread." to "I went to the store and bought bread."
+
+Evaluating Content:
+1. Question-Answer Similarity:
+Utilize NLP similarity measures (like cosine similarity with TF-IDF, BERT embeddings, etc.) to determine how closely the answer matches the question's intent.
+
+2. ROUGE, BLEU, or METEOR Score:
+If you have a reference answer, these scores can measure how closely the provided answer matches the reference.
+
+Evaluating Wording:
+✅ 1. Readability Scores:
+✅ Use metrics like Flesch-Kincaid, Gunning Fog, or SMOG index to measure the readability of the text. Higher scores typically mean more complex text.
+
+✅ 2. Lexical Density:
+✅ Measure the ratio of unique words to the total number of words in a text. A higher ratio can indicate more complexity.
+
+✅ 3. Average Word and Sentence Length:
+✅ Longer words and sentences can sometimes be indicators of more complex language.
+
+4. Syntactic Complexity:
+Measure the complexity of sentence structures. This can be done by analyzing the depth of syntactic trees, the number of subordinate clauses, etc.
+
+Evaluating Content:
+✅ 1. TF-IDF
+x Todo
+
+✅ 2. BM25
+x Todo
