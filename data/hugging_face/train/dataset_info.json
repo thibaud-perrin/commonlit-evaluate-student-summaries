@@ -10,11 +10,11 @@
       "dtype": "string",
       "_type": "Value"
     },
-    "prompt_question": {
+    "embeddings_question": {
       "dtype": "binary",
       "_type": "Value"
     },
-    "prompt_text": {
+    "embeddings_text": {
       "dtype": "binary",
       "_type": "Value"
     },
@@ -22,11 +22,67 @@
       "dtype": "binary",
       "_type": "Value"
     },
+    "smog_index": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "coleman_liau_index": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "flesch_reading_ease": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "spell_checker": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "tf_idf_question_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "lexical_density": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "avg_word_length": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
     "content": {
       "dtype": "float64",
       "_type": "Value"
     },
     "wording": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_lexical_density": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_spell_checker": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_tf_idf_question_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_avg_word_length": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_smog_index": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_coleman_liau_index": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "normalized_flesch_reading_ease": {
       "dtype": "float64",
       "_type": "Value"
     },
