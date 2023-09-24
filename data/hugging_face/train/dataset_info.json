@@ -85,14 +85,6 @@
     "normalized_flesch_reading_ease": {
       "dtype": "float64",
       "_type": "Value"
-    },
-    "normalized_content": {
-      "dtype": "float64",
-      "_type": "Value"
-    },
-    "normalized_wording": {
-      "dtype": "float64",
-      "_type": "Value"
     }
   },
   "homepage": "",
