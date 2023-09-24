@@ -58,6 +58,10 @@
       "dtype": "float64",
       "_type": "Value"
     },
+    "normalized_lex ical_density": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
     "normalized_lexical_density": {
       "dtype": "float64",
       "_type": "Value"
