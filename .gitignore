@@ -1,4 +1,4 @@
 .ipynb_checkpoints/*
 *.pt
-data/HuggingFace/*
-data/HuggingFace
+data/hugging_face/*
+data/hugging_face
