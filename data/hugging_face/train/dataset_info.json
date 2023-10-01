@@ -10,15 +10,11 @@
       "dtype": "string",
       "_type": "Value"
     },
-    "embeddings_question": {
-      "dtype": "binary",
+    "sentence": {
+      "dtype": "string",
       "_type": "Value"
     },
     "embeddings_text": {
-      "dtype": "binary",
-      "_type": "Value"
-    },
-    "text": {
       "dtype": "binary",
       "_type": "Value"
     },
@@ -34,16 +30,16 @@
       "dtype": "float64",
       "_type": "Value"
     },
-    "spell_checker": {
+    "lexical_density": {
       "dtype": "float64",
+      "_type": "Value"
+    },
+    "spell_checker": {
+      "dtype": "int64",
       "_type": "Value"
     },
     "tf_idf_question_score": {
-      "dtype": "float64",
-      "_type": "Value"
-    },
-    "lexical_density": {
-      "dtype": "float64",
+      "dtype": "int64",
       "_type": "Value"
     },
     "avg_word_length": {
@@ -56,6 +52,10 @@
     },
     "wording": {
       "dtype": "float64",
+      "_type": "Value"
+    },
+    "t_q_a_embeddings": {
+      "dtype": "binary",
       "_type": "Value"
     },
     "normalized_lexical_density": {
